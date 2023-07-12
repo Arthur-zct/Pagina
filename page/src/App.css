@@ -1,0 +1,29 @@
+.Login-section {
+    background-color: rgb(8, 27, 41);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.L-conteudo {
+    width: 74vw;
+    height: 74vh;
+    display: flex;
+    margin: auto;
+}
+.L-conteudo > div {
+    width: 50%;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+.Login-register {
+    background-color: rgb(14, 64, 89);
+}
+.Login-register > div {
+    width: 90%;
+    margin: auto;
+}
+.Login-register input {
+    
+}
