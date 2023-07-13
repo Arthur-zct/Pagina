@@ -3,7 +3,7 @@ import LoginPage from './components/Login'
 
 function App() {
   return (
-    <div className='aaaa'>
+    <div>
       <LoginPage />
     </div>
   );

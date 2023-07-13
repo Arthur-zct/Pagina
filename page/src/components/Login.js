@@ -10,8 +10,12 @@ const Login = () => {
             </div> 
             <div class="Login-register">
                 <div>
-                    <input type="text" placeholder="User"/>
+                    <input type="text" placeholder="Username"/>
                     <input type="text" placeholder="password"/>
+                    <div>
+                        <button>Sign in</button>
+                        <button>Sign up</button>
+                    </div>
                 </div>
             </div>
         </div>
