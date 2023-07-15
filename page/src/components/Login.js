@@ -5,8 +5,8 @@ const Login = () => {
   return (
     <section className='Login-section'>
         <div className='L-conteudo'>
-            <div>
-                <img src={Lua} alt=""/>
+            <div className='image'>
+                {/* imagem */}
             </div> 
             <div class="Login-register">
                 <div>

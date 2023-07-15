@@ -4,6 +4,10 @@
     width: 100vw;
     display: flex;
 }
+.image {
+    background-image: url(./img/lua.jpg);
+    background-size: cover;
+}
 .L-conteudo {
     width: 74%;
     height: 74%;
@@ -14,9 +18,11 @@
     width: 50%;
     height: 100%;
 }
-img {
-    height: 100%;
-    width: 100%;
+.L-conteudo > .image {
+    border-radius: 10px 0px 0px 10px;
+}
+.L-conteudo > .Login-register {
+    border-radius: 0px 10px 10px 0px;
 }
 .Login-register {
     background-color: rgb(13, 52, 72);
@@ -52,4 +58,5 @@ img {
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid rgba(230, 222, 222, 0.541);
     font-size: 1.1em;
+    cursor: pointer;
 }
