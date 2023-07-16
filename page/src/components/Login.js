@@ -16,6 +16,7 @@ const Login = () => {
                         <button>Sign in</button>
                         <button>Sign up</button>
                     </div>
+                    <button>Forgot Password?</button>
                 </div>
             </div>
         </div>
