@@ -3,9 +3,9 @@ import LoginPage from './components/Login'
 
 function App() {
   return (
-    <div>
+    <section>
       <LoginPage />
-    </div>
+    </section>
   );
 }
 
