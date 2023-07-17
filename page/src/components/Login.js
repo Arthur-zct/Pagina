@@ -7,10 +7,10 @@ const Login = () => {
             <div className='image'>
                 {/* imagem */}
             </div> 
-            <div class="Login-register">
+            <div className="Login-register">
                 <div>
-                    <input type="text" placeholder="Username" value="User1"/>
-                    <input type="password" placeholder="password" value="1234"/>
+                    <input type="text" placeholder="Username" defaultValue="User1"/>
+                    <input type="password" placeholder="password" defaultValue="1234"/>
                     <div>
                         <button>Sign in</button>
                         <button>Sign up</button>
