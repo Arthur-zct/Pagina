@@ -7,12 +7,15 @@ import reportWebVitals from './reportWebVitals';
 
 //rotas
 import {createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Login from './components/Login'
-import Teste from './components/teste'
+import Login from './pages/Login'
+import Teste from './pages/teste'
+import Error from './routes/Error'
+
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <Error/>,
     children: [
       {
         path: '/',
