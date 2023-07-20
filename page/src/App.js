@@ -1,11 +1,11 @@
 import './App.css';
-import LoginPage from './components/Login'
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
-    <section>
-      <LoginPage />
-    </section>
+    <div>
+      <Outlet/>
+    </div>
   );
 }
 
