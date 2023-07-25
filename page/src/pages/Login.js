@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Botao from '../components/button'
 
 const Login = () => {
   return (
@@ -12,8 +14,12 @@ const Login = () => {
                     <input type="text" placeholder="Username" defaultValue="User1"/>
                     <input type="password" placeholder="password" defaultValue="1234"/>
                     <div>
-                        <button>Sign in</button>
-                        <button>Sign up</button>
+                        <Link className='Log-button' to="/teste">
+                          <Botao text="sign in" /> 
+                        </Link>
+                        <Link className='Log-button'>
+                            <Botao text='sign up' />
+                        </Link>
                     </div>
                     <button>Forgot Password?</button>
                 </div>
