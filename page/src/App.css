@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 .Login-section {
     background-color: rgb(3, 22, 35);
     height: 100vh;
@@ -34,7 +37,7 @@
     height: 70%;
 }
 .Login-register input {
-    width: 80%;
+    width: 75%;
     margin-left: 10%;
     margin-top: 5%;
     height: 10%;
@@ -50,20 +53,22 @@
     color: rgba(255, 255, 255, 0.53);
 }
 .Login-register > div > div {
-    width: 90%;
+    width: 80%;
     height: 25%;
     margin: auto;
     margin-top: 9%;
     display: flex;
+    gap: 3em;
 }
 .Log-button {
-    height: 100%;
-    width: 50%;
+    height: 70%;
+    width: 40%;
     text-align: center;
+    cursor: default;
 }
 .button {
-    height: 60%;
-    width: 70%;
+    height: 100%;
+    width: 100%;
     margin: auto;
     background-color: rgba(255, 255, 255, 0);
     border: 2px solid rgba(255, 255, 255, 0.705);
