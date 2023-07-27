@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ValidarNome, ValidarSenha } from '../ValidarInfos'
+import { Validaremail, ValidarSenha } from '../ValidarInfos'
 import Botao from '../components/button'
 
 const Login = () => {
@@ -23,11 +23,11 @@ const Login = () => {
     const HandleChange = (a) => {
         //console.log("Digitando.. ", a.target.name, a.target.value)
         setForm({...Form, [a.target.name] : a.target.value})
-        //console.log('form ' + Form.nome + Form.senha)
+        //console.log('form ' + Form.email + Form.senha)
     }
 
     const Validar = () => {
-        return ValidarNome(Form.nome) && ValidarSenha(Form.senha) 
+        return Validaremail(Form.email) && ValidarSenha(Form.senha) 
     }
 
     console.log('formulario valido?' + Validar())
@@ -40,7 +40,7 @@ const Login = () => {
             </div> 
             <div className="Login-register">
                 <div>
-                    <input name='nome' type="text" placeholder="Username" onChange={HandleChange}/>
+                    <input name='email' type="text" placeholder="email" onChange={HandleChange}/>
                     <input name='senha' type="password" placeholder="password" onChange={HandleChange}/>
                     <div>
                         <Link className='Log-button' to="/teste">

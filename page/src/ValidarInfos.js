@@ -1,5 +1,5 @@
-const ValidarNome = (nome) => {
-   return nome?.toString().includes('@') && nome?.toString().includes('.')
+const Validaremail = (email) => {
+   return email?.toString().includes('@') && email?.toString().includes('.')
 }
 
 const ValidarSenha = (senha) => {
@@ -7,5 +7,5 @@ const ValidarSenha = (senha) => {
 }
 
 export {
-    ValidarNome, ValidarSenha,
+    Validaremail, ValidarSenha,
 }
