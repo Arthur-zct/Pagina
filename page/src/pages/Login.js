@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Botao from '../components/button'
-import { useState } from 'react'
+import {useState, useEffect } from 'react'
 import {LocalStorageAdd} from '../AdiconarLocal'
+import Botao from '../components/button'
 
 const Login = () => {
     const [Nome, setNome] = useState('')
@@ -14,13 +14,24 @@ const Login = () => {
             const Resposta = await LocalStorageAdd(Nome, Senha)
             if(Resposta === true){
                 setLogar('/teste')
-                alert('logado')
+                alert('Conta criada.')
             }
         } catch (erro) {
             alert("Há algo de errado, verifique se você digitou tudo corretamente.")
             alert(localStorage.nome + " boa " + localStorage.senha)
         }
     }
+    const Testar = () => {
+        if((localStorage.senha === Senha) && (localStorage.nome === Nome)){
+            setLogar('/teste')
+        }
+    }
+    useEffect(() => {
+        Testar()
+    }, [Nome, Senha])
+   
+    console.log(localStorage)
+    console.log(Logar)
 
   return (
     <div className='Login-section'>
@@ -32,12 +43,16 @@ const Login = () => {
                 <div>
                     <input type="text" placeholder="Username" onChange={(e)=>setNome(e.target.value)}/>
                     <input type="password" placeholder="password" onChange={(e)=>setSenha(e.target.value)}/>
-                    <div>
-                        <Link className='Log-button' onClick={Alertar} to={Logar}>
-                          <Botao text="sign in"  /> 
-                        </Link>
+                    <div className='buttons_container'>
+                        <div onClick={Alertar}>
+                            <Botao text="Login" />
+                        </div>
+                        <div>
+                            <Link className='Log-button' to={Logar}>
+                                <Botao text="Criar conta"  /> 
+                            </Link>
+                        </div>
                     </div>
-                    <button>Forgot Password?</button>
                 </div>
             </div>
         </div>
